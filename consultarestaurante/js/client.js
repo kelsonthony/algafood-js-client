@@ -1,6 +1,6 @@
 function consultarRestaurante() {
     $.ajax({
-        url: "http://localhost:8080/cozinhas",
+        url: "http://localhost:8088/cozinhas",
         type: "GET",
         headers: {
             "X-Teste": "ABC"
@@ -13,7 +13,7 @@ function consultarRestaurante() {
 
 function fecharRestaurante() {
     $.ajax({
-        url: "http://localhost:8080/restaurantes/1/fechamento",
+        url: "http://localhost:8088/restaurantes/1/fechamento",
         type: "PUT",
         success: function(response) {
             alert("Restaurante foi fechado");
